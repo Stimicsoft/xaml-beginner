@@ -6,14 +6,20 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-
-    <Grid>
+    <Page.TopAppBar>
+        <AppBar IsSticky="True" IsOpen="True">
+            <StackPanel Orientation="Horizontal">
+                <AppBarButton HorizontalAlignment="Left" Icon="Home" Label="Home" Click="Home_Click"/>
+            </StackPanel>
+        </AppBar>
+    </Page.TopAppBar>
+    <Grid Background="Black">
         <Grid.RowDefinitions>
-            <RowDefinition Height="1*" />
-            <RowDefinition Height=".50*" />
+            <RowDefinition Height=".55*" />
+            <RowDefinition Height=".25*" />
             <RowDefinition Height="2*" />
-            <RowDefinition Height=".50*" />
-            <RowDefinition Height=".5*" />
+            <RowDefinition Height=".25*" />
+            <RowDefinition Height=".25*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*" />
@@ -23,8 +29,14 @@
         
         <TextBlock Text="Special Requests:" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
         <TextBlock Text="Order Items:" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
-        <TextBlock Text="**Add to Order**" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBlock Text="**Submit Order**" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-
+        <Button Content="Add to Order" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+        <Button Content="Submit Order" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
+        <ListView Grid.Row="1" Grid.RowSpan="3" Background="Aquamarine">
+            
+        </ListView>
+        <ListView Grid.Row="2" Grid.Column="2" Grid.RowSpan="2" Background="BlanchedAlmond">
+            
+        </ListView>
     </Grid>
+    
 </Page>

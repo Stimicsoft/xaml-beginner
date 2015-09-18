@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid>
+    <Grid Background="Black">
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="125" />
@@ -20,8 +20,8 @@
         
         <TextBlock Text="Resturant Manager" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" />
         <TextBlock Text="Internal Test Version" Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="15"/>
-        <TextBlock Text="**Go to Orders View**" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
-        <TextBlock Text="**Submit Order**" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <Button x:Name="btnOrders" Content="Go to Orders View" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Click="btnOrders_Click"/>
+        <Button x:Name="btnSubmitOrder" Content="Submit Order" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Click="btnSubmitOrder_Click" />
 
     </Grid>
 </Page>
