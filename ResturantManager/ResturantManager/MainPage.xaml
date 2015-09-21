@@ -1,13 +1,13 @@
 ﻿<Page
-    x:Class="ResturantManager.MainPage"
+    x:Class="RestaurantManager.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:ResturantManager"
+    xmlns:local="using:RestaurantManager"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-
-    <Grid Background="Black">
+    <Grid Style="{StaticResource GridBackColor}">
+    <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="125" />
@@ -23,5 +23,6 @@
         <Button x:Name="btnOrders" Content="Go to Orders View" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Click="btnOrders_Click"/>
         <Button x:Name="btnSubmitOrder" Content="Submit Order" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Click="btnSubmitOrder_Click" />
 
+    </Grid>
     </Grid>
 </Page>
